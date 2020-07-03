@@ -21,5 +21,6 @@ services:
         - .:/app
       environment:
         - CHOKIDAR_USEPOLLING=true
+      stdin_open: true
       command: ["npm", "run", "test"]
      
